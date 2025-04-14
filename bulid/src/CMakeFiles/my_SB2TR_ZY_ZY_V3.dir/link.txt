@@ -1,0 +1,1 @@
+/usr/bin/g++ @CMakeFiles/my_SB2TR_ZY_ZY_V3.dir/objects1 -o my_SB2TR_ZY_ZY_V3 @CMakeFiles/my_SB2TR_ZY_ZY_V3.dir/linkLibs.rsp -L"/usr/local/cuda-12.5/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-12.5/targets/x86_64-linux/lib"

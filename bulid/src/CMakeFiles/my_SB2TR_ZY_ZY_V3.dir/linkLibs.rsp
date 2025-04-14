@@ -1,0 +1,1 @@
+ -Wl,-rpath,/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src libmy_api_shared_lib.so -lcurand -lcusolver -lcublas libmy_utils_shared_lib.so -lcurand -lcublas -lcudadevrt -lcudart_static -lrt -lpthread -ldl 
