@@ -1,4 +1,5 @@
 #pragma once
+#include <cuda_runtime.h>
 
 #define CHECK(call)                                                         \
     do                                                                      \
@@ -15,8 +16,18 @@
         }                                                                   \
     } while (0)
 
-// #define MY_DEBUG 1
-
+#define CUDA_RT_CALL(call)                                                                  \
+    {                                                                                       \
+        cudaError_t cudaStatus = call;                                                      \
+        if (cudaSuccess != cudaStatus) {                                                    \
+            fprintf(stderr,                                                                 \
+                    "ERROR: CUDA RT call \"%s\" in line %d of file %s failed "              \
+                    "with "                                                                 \
+                    "%s (%d).\n",                                                           \
+                    #call, __LINE__, __FILE__, cudaGetErrorString(cudaStatus), cudaStatus); \
+            exit( cudaStatus );                                                             \
+        }                                                                                   \
+    }
 
 static cudaEvent_t start, stop;
 static void startTimer()
@@ -25,7 +36,6 @@ static void startTimer()
     cudaEventCreate(&stop);
     cudaEventRecord(start);
 }
-
 
 static float stopTimer()
 {

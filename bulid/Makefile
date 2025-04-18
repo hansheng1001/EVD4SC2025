@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/nfs/wanghs/hpc/code4asplos25_syevd
+CMAKE_SOURCE_DIR = /home/wanghs/hpc/syEVD4SC2025
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid
+CMAKE_BINARY_DIR = /home/wanghs/hpc/syEVD4SC2025/bulid
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles /home/wanghs/hpc/syEVD4SC2025/bulid//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,17 +143,17 @@ my_api_shared_lib/fast:
 .PHONY : my_api_shared_lib/fast
 
 #=============================================================================
-# Target rules for targets named my_SB2TR_ZY_ZY_V3
+# Target rules for targets named myEVD
 
 # Build rule for target.
-my_SB2TR_ZY_ZY_V3: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_SB2TR_ZY_ZY_V3
-.PHONY : my_SB2TR_ZY_ZY_V3
+myEVD: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 myEVD
+.PHONY : myEVD
 
 # fast build rule for target.
-my_SB2TR_ZY_ZY_V3/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/my_SB2TR_ZY_ZY_V3.dir/build.make src/CMakeFiles/my_SB2TR_ZY_ZY_V3.dir/build
-.PHONY : my_SB2TR_ZY_ZY_V3/fast
+myEVD/fast:
+	$(MAKE) $(MAKESILENT) -f src/EVD/CMakeFiles/myEVD.dir/build.make src/EVD/CMakeFiles/myEVD.dir/build
+.PHONY : myEVD/fast
 
 # Help Target
 help:
@@ -163,7 +163,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... my_SB2TR_ZY_ZY_V3"
+	@echo "... myEVD"
 	@echo "... my_api_shared_lib"
 	@echo "... my_utils_shared_lib"
 .PHONY : help

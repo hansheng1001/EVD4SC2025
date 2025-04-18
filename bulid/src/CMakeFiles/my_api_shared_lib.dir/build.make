@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/nfs/wanghs/hpc/code4asplos25_syevd
+CMAKE_SOURCE_DIR = /home/wanghs/hpc/syEVD4SC2025
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid
+CMAKE_BINARY_DIR = /home/wanghs/hpc/syEVD4SC2025/bulid
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/my_api_shared_lib.dir/depend.make
@@ -69,12 +69,27 @@ include src/CMakeFiles/my_api_shared_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/my_api_shared_lib.dir/flags.make
 
+src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
+src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
+src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/BC_backTransV8_10_noBandU.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/BC_backTransV8_10_noBandU.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
-src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o: /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/TCblas/tc_ozimmu_syr2k.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/TCblas/tc_ozimmu_syr2k.cu
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && /usr/local/cuda-12.5/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o.d -x cu -c /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/TCblas/tc_ozimmu_syr2k.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/TCblas/tc_ozimmu_syr2k.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o
 
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.i"
@@ -84,12 +99,27 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/TCblas/tc_syr2k.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/TCblas/tc_syr2k.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
-src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o: /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/TCblas/util/mat_size.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/TCblas/util/mat_size.cu
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && /usr/local/cuda-12.5/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o.d -x cu -c /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/TCblas/util/mat_size.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/TCblas/util/mat_size.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o
 
 src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.i"
@@ -99,12 +129,42 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/computerQFromWY.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/computerQFromWY.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/computerWYFromSlide.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/computerWYFromSlide.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
 src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
-src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o: /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/panelQR.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/panelQR.cu
 src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && /usr/local/cuda-12.5/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o.d -x cu -c /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/panelQR.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/panelQR.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o
 
 src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.i"
@@ -116,10 +176,10 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.s: cmake_force
 
 src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o: src/CMakeFiles/my_api_shared_lib.dir/flags.make
 src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o: src/CMakeFiles/my_api_shared_lib.dir/includes_CUDA.rsp
-src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o: /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/zy_zy_sy2sb.cu
+src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o: /home/wanghs/hpc/syEVD4SC2025/api/zy_zy_sy2sb.cu
 src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o: src/CMakeFiles/my_api_shared_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && /usr/local/cuda-12.5/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o.d -x cu -c /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/zy_zy_sy2sb.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CUDA object src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o -MF CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/api/zy_zy_sy2sb.cu -o CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o
 
 src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.i"
@@ -131,16 +191,24 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.s: cmake_force
 
 # Object files for target my_api_shared_lib
 my_api_shared_lib_OBJECTS = \
+"CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o" \
 "CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o" \
+"CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o" \
 "CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o" \
+"CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o" \
+"CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o" \
 "CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o" \
 "CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o"
 
 # External object files for target my_api_shared_lib
 my_api_shared_lib_EXTERNAL_OBJECTS =
 
+src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/BC_backTransV8_10_noBandU.cu.o
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_ozimmu_syr2k.cu.o
+src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/tc_syr2k.cu.o
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/TCblas/util/mat_size.cu.o
+src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/computerQFromWY.cu.o
+src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/computerWYFromSlide.cu.o
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/panelQR.cu.o
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/build.make
@@ -148,18 +216,18 @@ src/libmy_api_shared_lib.so: src/libmy_utils_shared_lib.so
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/linkLibs.rsp
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/objects1
 src/libmy_api_shared_lib.so: src/CMakeFiles/my_api_shared_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CUDA shared library libmy_api_shared_lib.so"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_api_shared_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CUDA shared library libmy_api_shared_lib.so"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_api_shared_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/my_api_shared_lib.dir/build: src/libmy_api_shared_lib.so
 .PHONY : src/CMakeFiles/my_api_shared_lib.dir/build
 
 src/CMakeFiles/my_api_shared_lib.dir/clean:
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && $(CMAKE_COMMAND) -P CMakeFiles/my_api_shared_lib.dir/cmake_clean.cmake
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && $(CMAKE_COMMAND) -P CMakeFiles/my_api_shared_lib.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/my_api_shared_lib.dir/clean
 
 src/CMakeFiles/my_api_shared_lib.dir/depend:
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/nfs/wanghs/hpc/code4asplos25_syevd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/src /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src/CMakeFiles/my_api_shared_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wanghs/hpc/syEVD4SC2025 /home/wanghs/hpc/syEVD4SC2025/src /home/wanghs/hpc/syEVD4SC2025/bulid /home/wanghs/hpc/syEVD4SC2025/bulid/src /home/wanghs/hpc/syEVD4SC2025/bulid/src/CMakeFiles/my_api_shared_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/my_api_shared_lib.dir/depend
 

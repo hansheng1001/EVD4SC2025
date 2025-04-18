@@ -1,7 +1,7 @@
-src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/zy_zy_sy2sb.cu \
+src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /home/wanghs/hpc/syEVD4SC2025/api/zy_zy_sy2sb.cu \
     /usr/include/stdc-predef.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuda_runtime.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/host_config.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuda_runtime.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/host_config.h \
     /usr/include/features.h \
     /usr/include/features-time64.h \
     /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -10,9 +10,9 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/x86_64-linux-gnu/bits/long-double.h \
     /usr/include/x86_64-linux-gnu/gnu/stubs.h \
     /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/builtin_types.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/device_types.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/host_defines.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/builtin_types.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/device_types.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/host_defines.h \
     /usr/include/ctype.h \
     /usr/include/x86_64-linux-gnu/bits/types.h \
     /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -21,8 +21,8 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/x86_64-linux-gnu/bits/endianness.h \
     /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
     /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/driver_types.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/vector_types.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/driver_types.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/vector_types.h \
     /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
     /usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h \
     /usr/include/limits.h \
@@ -35,12 +35,12 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
     /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
     /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/surface_types.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/texture_types.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/library_types.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/channel_descriptor.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuda_runtime_api.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuda_device_runtime_api.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/surface_types.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/texture_types.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/library_types.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/channel_descriptor.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuda_runtime_api.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuda_device_runtime_api.h \
     /usr/include/c++/12/stdlib.h \
     /usr/include/c++/12/cstdlib \
     /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -76,10 +76,10 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/alloca.h \
     /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
     /usr/include/c++/12/bits/std_abs.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/driver_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/vector_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/vector_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/common_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/driver_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/vector_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/vector_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/common_functions.h \
     /usr/include/string.h \
     /usr/include/strings.h \
     /usr/include/time.h \
@@ -100,7 +100,7 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
     /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
     /usr/include/assert.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/math_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/math_functions.h \
     /usr/include/c++/12/math.h \
     /usr/include/c++/12/cmath \
     /usr/include/c++/12/bits/cpp_type_traits.h \
@@ -145,106 +145,73 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/c++/12/tr1/poly_hermite.tcc \
     /usr/include/c++/12/tr1/poly_laguerre.tcc \
     /usr/include/c++/12/tr1/riemann_zeta.tcc \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/math_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/device_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/device_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/device_atomic_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/device_atomic_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/device_double_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/device_double_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_35_atomic_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_20_intrinsics.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_30_intrinsics.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_30_intrinsics.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_32_intrinsics.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_32_intrinsics.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_35_intrinsics.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_61_intrinsics.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/sm_61_intrinsics.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/sm_70_rt.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/sm_70_rt.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/sm_80_rt.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/sm_80_rt.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/sm_90_rt.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/sm_90_rt.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/texture_indirect_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/surface_indirect_functions.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/crt/cudacc_ext.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/device_launch_parameters.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/math_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/device_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/device_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/device_atomic_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/device_atomic_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/device_double_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/device_double_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_20_atomic_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_32_atomic_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_35_atomic_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_60_atomic_functions.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_20_intrinsics.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_30_intrinsics.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_30_intrinsics.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_32_intrinsics.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_32_intrinsics.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_35_intrinsics.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_61_intrinsics.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/sm_61_intrinsics.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_70_rt.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_70_rt.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_80_rt.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_80_rt.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_90_rt.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_90_rt.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_100_rt.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/sm_100_rt.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/texture_indirect_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/surface_indirect_functions.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/crt/cudacc_ext.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/device_launch_parameters.h \
     /usr/include/c++/12/utility \
     /usr/include/c++/12/bits/stl_relops.h \
     /usr/include/c++/12/initializer_list \
-    /usr/include/c++/12/string \
+    /usr/include/c++/12/iostream \
+    /usr/include/c++/12/ostream \
+    /usr/include/c++/12/ios \
+    /usr/include/c++/12/iosfwd \
     /usr/include/c++/12/bits/stringfwd.h \
     /usr/include/c++/12/bits/memoryfwd.h \
-    /usr/include/c++/12/bits/char_traits.h \
     /usr/include/c++/12/bits/postypes.h \
     /usr/include/c++/12/cwchar \
     /usr/include/wchar.h \
     /usr/include/x86_64-linux-gnu/bits/wchar.h \
     /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
     /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+    /usr/include/c++/12/exception \
+    /usr/include/c++/12/bits/exception_ptr.h \
+    /usr/include/c++/12/bits/cxxabi_init_exception.h \
+    /usr/include/c++/12/typeinfo \
+    /usr/include/c++/12/bits/hash_bytes.h \
+    /usr/include/c++/12/bits/nested_exception.h \
+    /usr/include/c++/12/bits/char_traits.h \
     /usr/include/c++/12/cstdint \
     /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
     /usr/include/stdint.h \
     /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-    /usr/include/c++/12/bits/allocator.h \
-    /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
-    /usr/include/c++/12/bits/new_allocator.h \
     /usr/include/c++/12/bits/localefwd.h \
     /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
     /usr/include/c++/12/clocale \
     /usr/include/locale.h \
     /usr/include/x86_64-linux-gnu/bits/locale.h \
-    /usr/include/c++/12/iosfwd \
     /usr/include/c++/12/cctype \
-    /usr/include/c++/12/bits/ostream_insert.h \
-    /usr/include/c++/12/bits/cxxabi_forced.h \
-    /usr/include/c++/12/bits/stl_function.h \
-    /usr/include/c++/12/backward/binders.h \
-    /usr/include/c++/12/bits/refwrap.h \
-    /usr/include/c++/12/bits/invoke.h \
-    /usr/include/c++/12/bits/range_access.h \
-    /usr/include/c++/12/bits/basic_string.h \
-    /usr/include/c++/12/ext/alloc_traits.h \
-    /usr/include/c++/12/bits/alloc_traits.h \
-    /usr/include/c++/12/bits/stl_construct.h \
-    /usr/include/c++/12/string_view \
-    /usr/include/c++/12/bits/functional_hash.h \
-    /usr/include/c++/12/bits/hash_bytes.h \
-    /usr/include/c++/12/bits/string_view.tcc \
-    /usr/include/c++/12/ext/string_conversions.h \
-    /usr/include/c++/12/cstdio \
-    /usr/include/c++/12/cerrno \
-    /usr/include/errno.h \
-    /usr/include/x86_64-linux-gnu/bits/errno.h \
-    /usr/include/linux/errno.h \
-    /usr/include/x86_64-linux-gnu/asm/errno.h \
-    /usr/include/asm-generic/errno.h \
-    /usr/include/asm-generic/errno-base.h \
-    /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-    /usr/include/c++/12/bits/charconv.h \
-    /usr/include/c++/12/bits/basic_string.tcc \
-    /usr/include/c++/12/vector \
-    /usr/include/c++/12/bits/stl_uninitialized.h \
-    /usr/include/c++/12/bits/stl_vector.h \
-    /usr/include/c++/12/bits/stl_bvector.h \
-    /usr/include/c++/12/bits/vector.tcc \
-    /usr/include/c++/12/iostream \
-    /usr/include/c++/12/ostream \
-    /usr/include/c++/12/ios \
-    /usr/include/c++/12/exception \
-    /usr/include/c++/12/bits/exception_ptr.h \
-    /usr/include/c++/12/bits/cxxabi_init_exception.h \
-    /usr/include/c++/12/typeinfo \
-    /usr/include/c++/12/bits/nested_exception.h \
     /usr/include/c++/12/bits/ios_base.h \
     /usr/include/c++/12/ext/atomicity.h \
     /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
@@ -259,6 +226,36 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
     /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
     /usr/include/c++/12/bits/locale_classes.h \
+    /usr/include/c++/12/string \
+    /usr/include/c++/12/bits/allocator.h \
+    /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
+    /usr/include/c++/12/bits/new_allocator.h \
+    /usr/include/c++/12/bits/ostream_insert.h \
+    /usr/include/c++/12/bits/cxxabi_forced.h \
+    /usr/include/c++/12/bits/stl_function.h \
+    /usr/include/c++/12/backward/binders.h \
+    /usr/include/c++/12/bits/refwrap.h \
+    /usr/include/c++/12/bits/invoke.h \
+    /usr/include/c++/12/bits/range_access.h \
+    /usr/include/c++/12/bits/basic_string.h \
+    /usr/include/c++/12/ext/alloc_traits.h \
+    /usr/include/c++/12/bits/alloc_traits.h \
+    /usr/include/c++/12/bits/stl_construct.h \
+    /usr/include/c++/12/string_view \
+    /usr/include/c++/12/bits/functional_hash.h \
+    /usr/include/c++/12/bits/string_view.tcc \
+    /usr/include/c++/12/ext/string_conversions.h \
+    /usr/include/c++/12/cstdio \
+    /usr/include/c++/12/cerrno \
+    /usr/include/errno.h \
+    /usr/include/x86_64-linux-gnu/bits/errno.h \
+    /usr/include/linux/errno.h \
+    /usr/include/x86_64-linux-gnu/asm/errno.h \
+    /usr/include/asm-generic/errno.h \
+    /usr/include/asm-generic/errno-base.h \
+    /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+    /usr/include/c++/12/bits/charconv.h \
+    /usr/include/c++/12/bits/basic_string.tcc \
     /usr/include/c++/12/bits/locale_classes.tcc \
     /usr/include/c++/12/system_error \
     /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
@@ -278,22 +275,27 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/c++/12/bits/ostream.tcc \
     /usr/include/c++/12/istream \
     /usr/include/c++/12/bits/istream.tcc \
-    /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/inc/PanelQR.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cusolverDn.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuComplex.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cublas_v2.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cublas_api.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuda_fp16.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/nv/target \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/nv/detail/__target_macros \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/nv/detail/__preprocessor \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuda_fp16.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuda_bf16.h \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cuda_bf16.hpp \
-    /usr/local/cuda-12.5/bin/../targets/x86_64-linux/include/cusolver_common.h \
+    /usr/include/c++/12/vector \
+    /usr/include/c++/12/bits/stl_uninitialized.h \
+    /usr/include/c++/12/bits/stl_vector.h \
+    /usr/include/c++/12/bits/stl_bvector.h \
+    /usr/include/c++/12/bits/vector.tcc \
+    /home/wanghs/hpc/syEVD4SC2025/api/inc/computerQFromWY.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cusolverDn.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuComplex.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cublas_v2.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cublas_api.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuda_fp16.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/nv/target \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/nv/detail/__target_macros \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/nv/detail/__preprocessor \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuda_fp16.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuda_bf16.h \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cuda_bf16.hpp \
+    /usr/local/cuda-12.8/bin/../targets/x86_64-linux/include/cusolver_common.h \
     /usr/include/inttypes.h \
-    /mnt/nfs/wanghs/hpc/code4asplos25_syevd/util/inc/kernelOther.h \
-    /mnt/nfs/wanghs/hpc/code4asplos25_syevd/util/inc/fileOpTool.h \
+    /home/wanghs/hpc/syEVD4SC2025/api/inc/computerWYFromSlide.h \
+    /home/wanghs/hpc/syEVD4SC2025/util/inc/fileOpTool.h \
     /usr/include/c++/12/fstream \
     /usr/include/c++/12/bits/codecvt.h \
     /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
@@ -301,7 +303,9 @@ src/CMakeFiles/my_api_shared_lib.dir/__/api/zy_zy_sy2sb.cu.o : /mnt/nfs/wanghs/h
     /usr/include/c++/12/bits/fstream.tcc \
     /usr/include/c++/12/sstream \
     /usr/include/c++/12/bits/sstream.tcc \
-    /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/inc/TallShinnyQR.h \
-    /mnt/nfs/wanghs/hpc/code4asplos25_syevd/util/inc/kernelQR.h \
-    /mnt/nfs/wanghs/hpc/code4asplos25_syevd/inc/myBase.h \
-    /mnt/nfs/wanghs/hpc/code4asplos25_syevd/api/inc/tc_ozimmu_syr2k.h
+    /home/wanghs/hpc/syEVD4SC2025/util/inc/kernelOther.h \
+    /home/wanghs/hpc/syEVD4SC2025/inc/myBase.h \
+    /home/wanghs/hpc/syEVD4SC2025/api/inc/PanelQR.h \
+    /home/wanghs/hpc/syEVD4SC2025/api/inc/TallShinnyQR.h \
+    /home/wanghs/hpc/syEVD4SC2025/util/inc/kernelQR.h \
+    /home/wanghs/hpc/syEVD4SC2025/api/inc/tc_ozimmu_syr2k.h

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o"
   "CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o.d"
+  "CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o"
+  "CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o.d"
   "CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o"
   "CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o.d"
   "libmy_utils_shared_lib.pdb"

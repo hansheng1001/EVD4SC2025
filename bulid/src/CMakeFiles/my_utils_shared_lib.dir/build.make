@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/nfs/wanghs/hpc/code4asplos25_syevd
+CMAKE_SOURCE_DIR = /home/wanghs/hpc/syEVD4SC2025
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid
+CMAKE_BINARY_DIR = /home/wanghs/hpc/syEVD4SC2025/bulid
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/my_utils_shared_lib.dir/depend.make
@@ -71,10 +71,10 @@ include src/CMakeFiles/my_utils_shared_lib.dir/flags.make
 
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/flags.make
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/includes_CUDA.rsp
-src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o: /mnt/nfs/wanghs/hpc/code4asplos25_syevd/util/kernelOther/kernelOther.cu
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o: /home/wanghs/hpc/syEVD4SC2025/util/kernelOther/kernelOther.cu
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && /usr/local/cuda-12.5/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o -MF CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o.d -x cu -c /mnt/nfs/wanghs/hpc/code4asplos25_syevd/util/kernelOther/kernelOther.cu -o CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CUDA object src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o -MF CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/util/kernelOther/kernelOther.cu -o CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o
 
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.i"
@@ -84,12 +84,27 @@ src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/flags.make
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/includes_CUDA.rsp
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o: /home/wanghs/hpc/syEVD4SC2025/util/tool/checkMetric.cu
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o -MF CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/util/tool/checkMetric.cu -o CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o
+
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/flags.make
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/includes_CUDA.rsp
-src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o: /mnt/nfs/wanghs/hpc/code4asplos25_syevd/util/tool/fileOpTool.cu
+src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o: /home/wanghs/hpc/syEVD4SC2025/util/tool/fileOpTool.cu
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o: src/CMakeFiles/my_utils_shared_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && /usr/local/cuda-12.5/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o -MF CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o.d -x cu -c /mnt/nfs/wanghs/hpc/code4asplos25_syevd/util/tool/fileOpTool.cu -o CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && /usr/local/cuda-12.8/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o -MF CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o.d -x cu -c /home/wanghs/hpc/syEVD4SC2025/util/tool/fileOpTool.cu -o CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o
 
 src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.i"
@@ -102,29 +117,31 @@ src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.s: cmake_force
 # Object files for target my_utils_shared_lib
 my_utils_shared_lib_OBJECTS = \
 "CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o" \
+"CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o" \
 "CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o"
 
 # External object files for target my_utils_shared_lib
 my_utils_shared_lib_EXTERNAL_OBJECTS =
 
 src/libmy_utils_shared_lib.so: src/CMakeFiles/my_utils_shared_lib.dir/__/util/kernelOther/kernelOther.cu.o
+src/libmy_utils_shared_lib.so: src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/checkMetric.cu.o
 src/libmy_utils_shared_lib.so: src/CMakeFiles/my_utils_shared_lib.dir/__/util/tool/fileOpTool.cu.o
 src/libmy_utils_shared_lib.so: src/CMakeFiles/my_utils_shared_lib.dir/build.make
 src/libmy_utils_shared_lib.so: src/CMakeFiles/my_utils_shared_lib.dir/linkLibs.rsp
 src/libmy_utils_shared_lib.so: src/CMakeFiles/my_utils_shared_lib.dir/objects1
 src/libmy_utils_shared_lib.so: src/CMakeFiles/my_utils_shared_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CUDA shared library libmy_utils_shared_lib.so"
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_utils_shared_lib.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wanghs/hpc/syEVD4SC2025/bulid/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CUDA shared library libmy_utils_shared_lib.so"
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_utils_shared_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/my_utils_shared_lib.dir/build: src/libmy_utils_shared_lib.so
 .PHONY : src/CMakeFiles/my_utils_shared_lib.dir/build
 
 src/CMakeFiles/my_utils_shared_lib.dir/clean:
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src && $(CMAKE_COMMAND) -P CMakeFiles/my_utils_shared_lib.dir/cmake_clean.cmake
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid/src && $(CMAKE_COMMAND) -P CMakeFiles/my_utils_shared_lib.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/my_utils_shared_lib.dir/clean
 
 src/CMakeFiles/my_utils_shared_lib.dir/depend:
-	cd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/nfs/wanghs/hpc/code4asplos25_syevd /mnt/nfs/wanghs/hpc/code4asplos25_syevd/src /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src /mnt/nfs/wanghs/hpc/code4asplos25_syevd/bulid/src/CMakeFiles/my_utils_shared_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wanghs/hpc/syEVD4SC2025/bulid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wanghs/hpc/syEVD4SC2025 /home/wanghs/hpc/syEVD4SC2025/src /home/wanghs/hpc/syEVD4SC2025/bulid /home/wanghs/hpc/syEVD4SC2025/bulid/src /home/wanghs/hpc/syEVD4SC2025/bulid/src/CMakeFiles/my_utils_shared_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/my_utils_shared_lib.dir/depend
 

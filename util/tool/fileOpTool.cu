@@ -1,19 +1,28 @@
-#include <iostream>
-#include <vector>
+#include <cuda_fp16.h>
+
 #include <fstream>
+#include <iostream>
 #include <sstream>
+#include <vector>
+
 #include <curand.h>
 
+template <typename T>
+void generateUniformMatrix(T *dA, long int m, long int n);
+
+template <>
 void generateUniformMatrix(double *dA, long int m, long int n)
 {
   curandGenerator_t gen;
   curandCreateGenerator(&gen, CURAND_RNG_PSEUDO_DEFAULT);
   int seed = 3000;
   curandSetPseudoRandomGeneratorSeed(gen, seed);
+
   curandGenerateUniformDouble(gen, dA, long(m * n));
 }
 
-void generateUniformMatrixFloat(float *dA, long int m, long int n)
+template <>
+void generateUniformMatrix(float *dA, long int m, long int n)
 {
   curandGenerator_t gen;
   curandCreateGenerator(&gen, CURAND_RNG_PSEUDO_DEFAULT);
@@ -22,6 +31,41 @@ void generateUniformMatrixFloat(float *dA, long int m, long int n)
   curandGenerateUniform(gen, dA, long(m * n));
 }
 
+__global__ static void
+matrixCpyF2H(long int m, long int n, float *a, long int lda, half *b, long int ldb)
+{
+  long int i = threadIdx.x + blockDim.x * blockIdx.x;
+  long int j = threadIdx.y + blockDim.y * blockIdx.y;
+  if (i < m && j < n)
+  {
+    b[i + j * ldb] = __half2float(a[i + j * lda]);
+  }
+}
+
+template <>
+void generateUniformMatrix(half *dA, long int m, long int n)
+{
+  curandGenerator_t gen;
+  curandCreateGenerator(&gen, CURAND_RNG_PSEUDO_DEFAULT);
+  int seed = 3000;
+  curandSetPseudoRandomGeneratorSeed(gen, seed);
+
+  float *_dA;
+  cudaMalloc((void **)&_dA, sizeof(float) * m * n);
+
+  curandGenerateUniform(gen, _dA, long(m * n));
+
+  dim3 blockDim(32, 32);
+  dim3 gridDim((m + 32 - 1) / 32, (n + 32 - 1) / 32);
+  matrixCpyF2H<<<gridDim, blockDim>>>(m, n, _dA, m, dA, m);
+
+  cudaFree(_dA);
+}
+
+template <typename T>
+void generateNormalMatrix(T *dA, long int m, long int n, T mean, T stddev);
+
+template <>
 void generateNormalMatrix(double *dA, long int m, long int n, double mean, double stddev)
 {
   curandGenerator_t gen;
@@ -32,7 +76,8 @@ void generateNormalMatrix(double *dA, long int m, long int n, double mean, doubl
   curandGenerateNormalDouble(gen, dA, long(m * n), mean, stddev);
 }
 
-void generateNormalMatrixfloat(float *dA, long int m, long int n, float mean, float stddev)
+template <>
+void generateNormalMatrix(float *dA, long int m, long int n, float mean, float stddev)
 {
   curandGenerator_t gen;
   curandCreateGenerator(&gen, CURAND_RNG_PSEUDO_DEFAULT);
@@ -42,8 +87,44 @@ void generateNormalMatrixfloat(float *dA, long int m, long int n, float mean, fl
   curandGenerateNormal(gen, dA, long(m * n), mean, stddev);
 }
 
-std::vector<std::vector<double>> readMatrixFromFile(
-    const std::string &fileName)
+template <typename T>
+void printDeviceMatrixV2(T *dA, long ldA, long rows, long cols)
+{
+  T matrix;
+
+  for (long i = 0; i < rows; i++)
+  {
+    for (long j = 0; j < cols; j++)
+    {
+      cudaMemcpy(&matrix, dA + i + j * ldA, sizeof(T), cudaMemcpyDeviceToHost);
+
+      printf("%.14f ", matrix); 
+    }
+    printf("\n");
+  }
+}
+
+template void printDeviceMatrixV2(double *dA, long ldA, long rows, long cols);
+template void printDeviceMatrixV2(float *dA, long ldA, long rows, long cols);
+
+template <>
+void printDeviceMatrixV2(half *dA, long ldA, long rows, long cols)
+{
+  half matrix;
+
+  for (long i = 0; i < rows; i++)
+  {
+    for (long j = 0; j < cols; j++)
+    {
+      cudaMemcpy(&matrix, dA + i + j * ldA, sizeof(half), cudaMemcpyDeviceToHost);
+      float f = __half2float(matrix);
+      printf("%.14f ", f);
+    }
+    printf("\n");
+  }
+}
+
+std::vector<std::vector<double>> readMatrixFromFile(const std::string &fileName)
 {
   std::vector<std::vector<double>> matrix;
 
@@ -81,7 +162,6 @@ void fillMatrix(double *matrix, std::vector<std::vector<double>> &data)
 {
   long rows = data.size();
   long cols = data[0].size();
-
 
 
   for (long i = 0; i < cols; i++)
@@ -122,21 +202,3 @@ void printDeviceMatrixV2Int(int *dA, long ldA, long rows, long cols)
   }
 }
 
-// template<typename T>
-// void printDeviceMatrix(T *dA, long rows, long cols) {
-
-//   T *matrix;
-//   matrix = (T *)malloc(sizeof(T) * m * n);
-
-//   cudaMemcpy(matrix, dA, sizeof(T) * m * n, cudaMemcpyDeviceToHost);
-
-//   for (long i = 0; i < rows; i++) {
-//     for (long j = 0; j < cols; j++) {
-//       // printf("%f ", matrix[i * cols + j]);//按行存储优先
-//       printf("%10.4f", matrix[j * rows + i]);  // 按列存储优先
-//     }
-//     printf("\n");
-//   }
-
-//   free(matrix);
-// }
